@@ -6,7 +6,12 @@ class Client < ActiveRecord::Base
   validates :first_name, :last_name, :phone, :email, :cpf, presence: true
   validates :email, format: { with:  EMAIL_REGEX }, uniqueness: true
   validates :cpf, format: { with: CPF_REGEX }, uniqueness: true
-  validates :password, presence: true, length: { minimum: 6 } allow_blank: true
+  validates :password, presence: true, length: { minimum: 6 }, allow_blank: true
 
   has_secure_password
+
+  def full_name
+    "#{first_name} #{last_name}"
+  end
+
 end

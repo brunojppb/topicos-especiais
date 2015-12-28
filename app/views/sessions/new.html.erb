@@ -1,0 +1,30 @@
+<section id=""><!--form-->
+  <div class="container">
+    <div class="row">
+      <div class="col-sm-4 col-sm-offset-1">
+        <div class="login-form"><!--login form-->
+          <h2>Já Sou Cliente</h2>
+          <%= form_for(:session, url: login_path) do |f| %>
+
+            <%= f.text_field :email, placeholder: 'Email' %>
+            <%= f.password_field :password, placeholder: 'Senha' %>
+
+            <%= f.submit "Log in", class: 'btn btn-primary' %>
+          <% end %>
+        </div><!--/login form-->
+      </div>
+      <div class="col-sm-1">
+        <h2 class="or">OU</h2>
+      </div>
+      <div class="col-sm-4">
+        <div class="signup-form"><!--sign up form-->
+          <h2>Crie Sua Conta!</h2>
+          <%= form_for(@client) do |f| %>
+            <%= render 'clients/fields', f: f %>
+            <%= f.submit "Criar Minha Conta", class: "btn btn-primary" %>
+          <%end%>
+        </div><!--/sign up form-->
+      </div>
+    </div>
+  </div>
+</section><!--/form-->

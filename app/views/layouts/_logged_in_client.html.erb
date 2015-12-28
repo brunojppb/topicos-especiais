@@ -1,0 +1,12 @@
+<li>
+  <%= link_to current_user do %>
+    <i class="fa fa-user"></i> Minha Conta
+  <% end %>
+</li>
+<li><a href="checkout.html"><i class="fa fa-crosshairs"></i> Checkout</a></li>
+<li><a href="cart.html"><i class="fa fa-shopping-cart"></i> Carrinho</a></li>
+<li>
+  <%= link_to logout_path, method: :delete do %>
+    <i class="fa fa-lock"></i> Sair
+  <% end %>
+</li>

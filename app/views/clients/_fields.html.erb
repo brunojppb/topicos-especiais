@@ -1,0 +1,9 @@
+<%= render 'shared/error_messages', object: f.object %>
+
+<%= f.text_field :first_name, placeholder: 'Nome', class: 'form-control' %>
+<%= f.text_field :last_name, placeholder: 'Sobrenome', class: 'form-control' %>
+<%= f.text_field :cpf, placeholder: 'CPF', class: 'form-control' %>
+<%= f.text_field :phone, placeholder: 'Telefone', class: 'form-control' %>
+<%= f.email_field :email, placeholder: 'Email', class: 'form-control' %>
+<%= f.password_field :password, placeholder: 'Senha', class: 'form-control'  %>
+<%= f.password_field :password_confirmation, placeholder: 'Confirme a senha', class: 'form-control'  %>
