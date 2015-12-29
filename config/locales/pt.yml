@@ -1,0 +1,43 @@
+pt:
+  # Messages
+  messages:
+    client_update:
+      success: 'Perfil atualizado com sucesso.'
+  # ActiveRecord Models
+  activerecord:
+    attributes:
+      client:
+        first_name:             'Nome'
+        last_name:              'Sobrenome'
+        phone:                  'Telefone'
+        cpf:                    'CPF'
+        password:               'Senha'
+        password_confirmation:  'Confirmação da senha'
+        active:                 'ativo'
+
+    errors:
+      models:
+        client:
+          attributes:
+            first_name:
+              invalid: 'invalido.'
+              blank: 'não pode ser branco'
+            last_name:
+              invalid: 'invalido.'
+              blank: 'não pode ser branco'
+            cpf:
+              invalid: 'invalido.'
+              blank: 'não pode ser branco'
+            phone:
+              invalid: 'invalido.'
+              blank: 'não pode ser branco'
+            password:
+              invalid: 'invalido.'
+              blank: 'não pode ser branco'
+              too_short: 'precisa ter nó mínimo 6 caracteres'
+            password_confirmation:
+              blank: 'não pode ser branco'
+              confirmation: 'precisar ser igual a senha informada'
+            email:
+              invalid: 'inválido.'
+              blank: 'não pode ser branco'

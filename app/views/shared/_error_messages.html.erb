@@ -4,7 +4,7 @@
       O formulário contem <%= pluralize(object.errors.count, "erro") %>:
       <ul>
         <% object.errors.full_messages.each do |msg| %>
-          <li> <%= msg %> </li>
+          <li class="error_li"> <%= msg %> </li>
         <% end %>
       </ul>
     </div>

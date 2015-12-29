@@ -16,9 +16,13 @@
  */
 
 #error_explanation {
-  color: red;
+  color: blue;
   ul {
     color: red;
     margin: 0 0 30px 0;
   }
+}
+
+.error_li {
+  list-style-type: circle;
 }
